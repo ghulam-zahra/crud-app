@@ -1,0 +1,133 @@
+.pageHeader{
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageHeader h1{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.pageHeader p{
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.userTable{
+    max-width: 900px;
+    background-color: var(--surface);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border-radius: 16px;
+    margin: 24px auto 50px;
+    padding: 30px;
+}
+
+.addButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 14px rgba(108, 92, 231, 0.45);
+    border-radius: 10px;
+    padding: 12px 20px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.addButton:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(108, 92, 231, 0.55);
+}
+
+.userTable table{
+    width:100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.userTable table thead th{
+    background-color: transparent;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #eef0f5;
+}
+
+.userTable table tbody tr{
+    transition: background-color 0.15s ease;
+}
+
+.userTable table tbody tr:hover{
+    background-color: #f8f7ff;
+}
+
+.userTable table tbody td{
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eef0f5;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+.emptyState{
+    text-align: center;
+    padding: 40px 12px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.actionButtons{
+    display: flex;
+    gap: 8px;
+}
+
+.actionButtons button{
+    border:0;
+    outline:0;
+    background-color: #fff0f0;
+    color: var(--danger);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.actionButtons button:hover{
+    background-color: var(--danger);
+    color: white;
+}
+
+.actionButtons a{
+    background-color: #eef0ff;
+    color: var(--primary);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.actionButtons a:hover{
+    background-color: var(--primary);
+    color: white;
+}

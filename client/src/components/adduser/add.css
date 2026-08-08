@@ -1,0 +1,83 @@
+.addUser{
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--surface);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border-radius: 16px;
+    margin: 60px auto;
+    padding: 40px;
+}
+
+.backButton{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.backButton:hover{
+    color: var(--primary);
+}
+
+.addUser h3{
+    margin-top:16px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.addUserForm{
+    margin-top: 24px;
+}
+
+.addUserForm .inputGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.addUserForm .inputGroup label{
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.addUserForm .inputGroup input{
+    padding: 12px 14px;
+    border: 1.5px solid #e4e4ee;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.addUserForm .inputGroup input:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.15);
+}
+
+.addUserForm .inputGroup button{
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(108, 92, 231, 0.45);
+    margin-top: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.addUserForm .inputGroup button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(108, 92, 231, 0.55);
+}

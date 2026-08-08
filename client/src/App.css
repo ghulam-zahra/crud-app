@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+*{
+  font-family: "Inter", "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary: #6C5CE7;
+  --primary-dark: #5849c2;
+  --accent: #00cec9;
+  --danger: #ff5c5c;
+  --danger-dark: #e64545;
+  --bg-start: #667eea;
+  --bg-end: #764ba2;
+  --surface: #ffffff;
+  --text-dark: #2d2d3a;
+  --text-muted: #6b6b7b;
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  background-attachment: fixed;
+  color: var(--text-dark);
+}
+
+.App{
+  min-height: 100vh;
+}

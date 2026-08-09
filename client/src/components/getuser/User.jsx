@@ -11,7 +11,7 @@ const User = () => {
   useEffect(()=>{
     const fetchData = async() =>{
       try{
-        const response = await axios.get("http://localhost:8000/user/getall")
+        const response = await axios.get("https://crud-app-xee.bonto.run/user/getall")
         setUser(response.data)
       } catch(error){
         console.log(error);
@@ -22,7 +22,7 @@ const User = () => {
   },[])
 
   const deleteUser =async (userId) =>{
-    await axios.delete(`http://localhost:8000/user/deletebyid/${userId}`)
+    await axios.delete(`https://crud-app-xee.bonto.run/user/deletebyid/${userId}`)
     .then((response)=>{
       setUser((prevUser)=>prevUser.filter((user)=>user._id !== userId))
       toast.success(response.data.msg, {position: 'top-right'})

@@ -20,7 +20,7 @@ const Add = () => {
 
     const submitForm = async (e) =>{
         e.preventDefault();
-        await axios.post("http://localhost:8000/user/create" ,user)
+        await axios.post("https://crud-app-xee.bonto.run/user/create" ,user)
         .then(() =>{
             toast.success("User added successfully",{position:"top-right"})
             navigate("/")

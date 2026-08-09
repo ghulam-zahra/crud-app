@@ -22,7 +22,7 @@ const Edit = () => {
         setUser({...user , [name]:value})
     }
     useEffect(()=>{
-        axios.get(`http://localhost:8000/user/getbyid/${id}`)
+        axios.get(`https://crud-app-xee.bonto.run/user/getbyid/${id}`)
         .then((response)=>{
             setUser(response.data)
         })
@@ -34,7 +34,7 @@ const Edit = () => {
 
     const submitForm = async(e)=>{
           e.preventDefault();
-        await axios.put(`http://localhost:8000/user/updatebyid/${id}` ,user)
+        await axios.put(`https://crud-app-xee.bonto.run/user/updatebyid/${id}` ,user)
         .then((response) =>{
             toast.success(response.data.msg,{position:"top-right"})
             navigate("/")

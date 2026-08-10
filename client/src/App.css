@@ -25,8 +25,16 @@ body{
   background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
   background-attachment: fixed;
   color: var(--text-dark);
+  overflow-x: hidden;
 }
 
 .App{
   min-height: 100vh;
+}
+
+@media (max-width: 640px){
+  body{
+    /* fixed attachment causes jank on mobile browsers */
+    background-attachment: scroll;
+  }
 }

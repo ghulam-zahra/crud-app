@@ -81,3 +81,17 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(108, 92, 231, 0.55);
 }
+
+/* ===== Responsive: mobile ===== */
+@media (max-width: 480px){
+    .addUser{
+        width: calc(100% - 24px);
+        margin: 24px auto;
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .addUser h3{
+        font-size: 19px;
+    }
+}
